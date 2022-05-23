@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BoletasController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\SessionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +17,15 @@ use App\Http\Controllers\BoletasController;
 */
 
 Route::get('/', function () {
-    return view('app');
+    return view('home');
 });
 
+/* Routes para el login*/
+Route::get('/login', [SessionController::class, 'create'])->name('login.index');
+
+Route::get('/registro', [RegisterController::class, 'create'])->name('register.index');
+
+/* Routes para las boletas */
 
 Route::get('/permiso',  [BoletasController::class,'index'])->name('boletas');
 

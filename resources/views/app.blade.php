@@ -21,7 +21,7 @@
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="resources/views/img/logoSeda.png" alt="Sedacusco logo" style="width: 40%;">
+                <img src="/resources/views/img/logoSeda.png" alt="Sedacusco logo" style="width: 40%;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,20 +30,18 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto" style="display: flex; align-items: center;">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('boletas')}}">Su Boleta</a>
+                        <a class="nav-link" href="{{route('boletas')}}">Nueva Boleta</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Lista de Boletas</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Administración</a>
-                    </li>
+                    
                 </ul>
             </div>
         </div>
     </nav>
 
-        @yield('content')
+       
 </body>
   <!--    BOOSTRAP    -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
