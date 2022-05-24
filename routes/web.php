@@ -17,7 +17,7 @@ use App\Http\Controllers\SessionController;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('app');
 });
 
 /* Routes para el login*/
