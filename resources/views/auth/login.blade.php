@@ -5,24 +5,26 @@
 @section('content')
 
 
+
+
+
 <div class="container">
-    <!--    IMAGEN  -->
-    <div class="text-end">
-        <img src="/resources/views/img/logoSeda.png" width="48" alt="Logo_SEDA">
-    </div>
+    
 
     <!--    TITULO  -->
     <h1 class="fw-bold text-5xl text-center py-3">Login</h1>
 
     <div class="row">
 
-        <div class="col"></div>
+        <div class="col">
+            <img src="/resources/views/img/introSeda.png" width="48" alt="Logo_SEDA">
+        </div>
 
         <div class="col">
             <!--    TITULO ESPECIFICO  -->
             <h4 class="fw-bold text-5xl text-center py-3">Bienvenido</h4>
             <!--    LOGIN  -->
-            <form class="mt-8 space-y-6" action="#" method="POST">
+            <form class="mt-8 space-y-6" action="{{route('boletas')}}" method="POST">
                 <div class="rounded-md shadow-sm ">
                     <div class="mb-4">
                         <!--    Correo    -->
@@ -55,14 +57,14 @@
                         </div>
 
                         <div class="text-sm">
-                            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"> Olvidó su contraseña?
+                            <a href="{{route('boletas')}}" class="font-medium text-indigo-600 hover:text-indigo-500"> Olvidó su contraseña?
                             </a>
                         </div>
                     </div>
 
-                    <div class="text-right">
+                    <div class="text-center p-4">
 
-                        <button type="submit" class="btn btn-primary float-right">
+                        <button type="submit" class="btn btn-primary btn-lg">
                             <div>
                                 <span class="absolute left-0 inset-y-0 flex items-center pl-3">
                                     <!-- Heroicon name: solid/lock-closed -->

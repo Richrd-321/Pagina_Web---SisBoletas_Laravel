@@ -17,17 +17,17 @@ use App\Http\Controllers\SessionController;
 */
 
 Route::get('/', function () {
-    return view('app');
+    return view('home');
 });
 
-/* Routes para el login*/
+/* Routes para el login */
 Route::get('/login', [SessionController::class, 'create'])->name('login.index');
 
+
 Route::get('/registro', [RegisterController::class, 'create'])->name('register.index');
+Route::post('/registro', [RegisterController::class, 'store'])->name('register.index');
 
 /* Routes para las boletas */
-
 Route::get('/permiso',  [BoletasController::class,'index'])->name('boletas');
-
 Route::post('/permiso', [BoletasController::class, 'store'])->name('boletas');
 
