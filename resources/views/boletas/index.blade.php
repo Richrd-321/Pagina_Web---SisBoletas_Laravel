@@ -1,4 +1,7 @@
-@extends('app')
+@extends('layouts.inter')
+
+@section('title', 'Permiso')
+
 
 @section('content')
 

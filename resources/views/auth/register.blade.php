@@ -15,7 +15,7 @@
         <div class="col">
     
             <!--    REGISTRO  -->
-            <form class="mt-8 space-y-6" action="{{ route('login.index') }}" method="POST">
+            <form class="mt-8 space-y-6" action="{{ route('login.index') }}" method="GET">
                 @csrf
                 <div class="rounded-md shadow-sm ">
                     <div class="mb-4">

@@ -24,7 +24,7 @@
             <!--    TITULO ESPECIFICO  -->
             <h4 class="fw-bold text-5xl text-center py-3">Bienvenido</h4>
             <!--    LOGIN  -->
-            <form class="mt-8 space-y-6" action="{{route('boletas')}}" method="POST">
+            <form class="mt-8 space-y-6" action="{{route('boletas')}}" method="GET">
                 <div class="rounded-md shadow-sm ">
                     <div class="mb-4">
                         <!--    Correo    -->
