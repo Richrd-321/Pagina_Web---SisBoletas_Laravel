@@ -28,7 +28,7 @@
                                 aria-describedby="basic-addon1" name="nombre">
                         </div>
 
-                    </div>s
+                    </div>
 
                     <!--    CALENDARIO  -->
                     <div class="input-group mb-3">

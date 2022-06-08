@@ -16,12 +16,12 @@ class RegisterController extends Controller
         ]);
 
         // Creamos el Objeto
-        $user = new User;
-        $user->name = $request->name;
-        $user->email = $request->email;
-        $user->password = $request->password;
+        $users = new User;
+        $users->name = $request->name;
+        $users->email = $request->email;
+        $users->password = $request->password;
     
-        $boletas->save();
+        $users->save();
 
         // Redirigiendo al usuario
         return redirect()->route('login.index')->with('success', 'Registro creado exitosamente');
@@ -29,9 +29,9 @@ class RegisterController extends Controller
 
     public function create() {
         //return view('auth.register');
-        $user = User::all();
+        $users = User::all();
 
-        return view('auth.register', ['register' => $user]);
+        return view('auth.register', ['register' => $users]);
     }
 
     

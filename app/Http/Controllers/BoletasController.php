@@ -38,7 +38,21 @@ class BoletasController extends Controller
 
     public function index(){
         $boletas = Boleta::all();
+        return view('boletas.index', ['boletas' => $boletas]);
+    }
 
+    public function show($id){
+        $boletas = Boleta::find($id);
+        return view('boletas.show', ['boletas' => $boletas]);
+    }
+
+    public function update(){
+        $boletas = Boleta::all();
+        return view('boletas.index', ['boletas' => $boletas]);
+    }
+
+    public function destroy(){
+        $boletas = Boleta::all();
         return view('boletas.index', ['boletas' => $boletas]);
     }
 }

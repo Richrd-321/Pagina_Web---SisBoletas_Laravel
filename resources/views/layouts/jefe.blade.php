@@ -15,7 +15,7 @@
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 
-    <title>Administracion de Boletas</title>
+    <title>Sistema de Boletas</title>
 </head>
 
 <body>
@@ -35,10 +35,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto" style="display: flex; align-items: center;">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('boletas')}}">Nueva Boleta</a>
+                        <a class="nav-link" href="{{route('boletas')}}">Generar Permiso</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{route('boletas') }}">Lista de Boletas</a>
+                        <a class="nav-link" href="#">Lista de Permisos</a>
                     </li>
 
                 </ul>

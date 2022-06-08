@@ -1,4 +1,6 @@
-@extends('app')
+@extends('layouts.inter')
+
+@section('title', 'Lista de Permiso')
 
 @section('content')
     <div class="container w-25 border p-4 mt-4">
@@ -15,7 +17,7 @@
             @enderror
             <div class="mb-3">
                 <label for="title" class="form-label">Titulo de la Tarea</label>
-                <input type="text" class="form-control" name="title" value="{{ $todo->title }}">
+                <input type="text" class="form-control" name="title" value="{{ $boletas->nombre }}">
            </div>
             
             <button type="submit" class="btn btn-primary">Actualizar Tarea</button>

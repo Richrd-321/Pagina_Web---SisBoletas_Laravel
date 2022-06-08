@@ -17,7 +17,7 @@ use App\Http\Controllers\SessionController;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('principal');
 });
 
 /* Routes para el login */
@@ -30,4 +30,9 @@ Route::post('/registro', [RegisterController::class, 'store'])->name('register.i
 /* Routes para las boletas */
 Route::get('/permiso',  [BoletasController::class,'index'])->name('boletas');
 Route::post('/permiso', [BoletasController::class, 'store'])->name('boletas');
+ /*
+Route::get('/permiso',  [BoletasController::class,'show'])->name('boletas-show');
 
+Route::post('/permiso', [BoletasController::class, 'store'])->name('boletas-update');
+Route::post('/permiso', [BoletasController::class, 'store'])->name('boletas-destroy');
+*/
